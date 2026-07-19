@@ -1,0 +1,18 @@
+# Core pipeline
+ultralytics>=8.2.0
+opencv-python>=4.9.0
+numpy>=1.26.0
+psutil>=5.9.0
+
+# Web GUI (streamlit_app.py) - camera select + video upload interface
+streamlit>=1.35.0
+
+# Optional: only needed for tracker_supervision.py (reference/comparison
+# implementation used in tracking_experiments.py write-ups). Not required
+# for the main app.py / streamlit_app.py, which use ultralytics' built-in
+# ByteTrack / BoT-SORT trackers instead.
+supervision>=0.21.0
+
+# Optional: analytics/plots for tracking_experiments reporting
+matplotlib>=3.8.0
+plotly>=5.20.0
